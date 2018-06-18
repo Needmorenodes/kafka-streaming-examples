@@ -1,4 +1,4 @@
-# Kafka Streaming Examples w/ Streamsets
+# Spark Streaming Examples w/ Kafka & Streamsets
 
 This repo contains
 * Scripts and Configs to set up Streamsets and Kafka in Docker
