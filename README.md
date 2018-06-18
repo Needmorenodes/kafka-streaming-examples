@@ -5,7 +5,7 @@ This repo contains
 * The Streamsets pipelines to generate and write data to Kafka
 * Spark Streaming Examples to Read and Write to/from Kafka
 
-##Setup
+## Setup
 
 ### Select Network Device
 First run `ifconfig` and find the network device with the internal ip address. For me that was `en0`
@@ -35,6 +35,8 @@ Now we can go into streamsets and import the pipelines.
 
 * `pipelines/generated/KafkaGeneratePipeline.<IP>.json` and `pipelines/generated/KafkaConsumePipeline.<IP>.json` for the `KafkaStreaming` job.
 
+## Build and Run
+
 ### Build
 Now that we have Kafka and Streamsets running and generating data, we can build and start the spark job.
 
@@ -49,7 +51,7 @@ _This script does assume that the spark binaries exist in ~/spark/spark_2.2.0/bi
 
 _One day I will fix that to be better_
 
-### Test
+## View Outputs
 
 Now that the jobs are running we can confirm the outputs by using `scripts/consume_topic.sh <topic_name>`
 
